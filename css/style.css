@@ -9,7 +9,26 @@ body {
 }
 
 #sidebar {
-  flex: 1;
+  text-align: left;
+  flex: 0.7;
+  padding: 2em;
+  text-align: left;
+}
+#sidebar #name, #sidebar #title {
+  font-family: futura-pt, sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+#sidebar #key {
+  font-family: dinosaur, sans-serif;
+  font-style: normal;
+  font-weight: 100;
+}
+#sidebar #key ul {
+  list-style: none;
+}
+#sidebar #key ul a {
+  text-decoration: none;
 }
 
 #projects {
