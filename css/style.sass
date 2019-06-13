@@ -79,9 +79,12 @@ body
     object-fit: cover
 
 #project2
+  .description:
+    margin-left: 0
+  
   .images
     flex: 3
-    width: 100%
+    width:100%
     margin-right: 4em
     display: grid
     align-items: center
@@ -91,6 +94,22 @@ body
       row: auto auto
       column-gap: 3em
       row-gap: 3em
+
+    img
+      flex: 1
+      flex-grow: 1
+      width: 100%
+
+#project3
+  .images
+    flex: 3
+    width:100%
+    display: grid
+    align-items: center
+    justify-items: center
+    grid:
+      template-columns: 100%
+      row-gap: 4em
 
     img
       flex: 1

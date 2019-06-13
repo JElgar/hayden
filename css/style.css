@@ -77,6 +77,9 @@ body {
   object-fit: cover;
 }
 
+#project2 {
+  .description-margin-left: 0;
+}
 #project2 .images {
   flex: 3;
   width: 100%;
@@ -90,6 +93,21 @@ body {
   grid-row-gap: 3em;
 }
 #project2 .images img {
+  flex: 1;
+  flex-grow: 1;
+  width: 100%;
+}
+
+#project3 .images {
+  flex: 3;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 100%;
+  grid-row-gap: 4em;
+}
+#project3 .images img {
   flex: 1;
   flex-grow: 1;
   width: 100%;
