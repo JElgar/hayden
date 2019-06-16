@@ -1,5 +1,7 @@
 dragElement(document.getElementById("scroll"));
 
+console.log("JS loaded")
+
 function dragElement(elmnt) {
   var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
   // otherwise, move the DIV from anywhere inside the DIV: 
@@ -23,8 +25,8 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     // set the element's new position:
       var newY = elmnt.offsetLeft - pos1;
-      if(newY <= 0 && newY >= -1400){
-        elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+      if(newY <= 0 && newY >= -(document.getElementById('scroll').offsetWidth)/2){
+        elmnt.style.left = (newY) + "px";
       }
   }
 

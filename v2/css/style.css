@@ -3,6 +3,11 @@ body {
   padding: 1em;
 }
 
+#body {
+  display: flex;
+  flex-direction: row;
+}
+
 #sidebar {
   width: 210px;
   text-align: left;
@@ -35,13 +40,21 @@ body {
 }
 #sidebar #key ul a {
   text-decoration: none;
+  color: black;
+}
+
+#projects {
+  width: 100%;
 }
 
 #projects > * {
   display: flex;
+  flex-direction: row;
 }
 #projects > * .description {
+  margin-top: 2em;
   flex: 1;
+  min-width: 240px;
   margin-left: 1.5em;
   font-family: dinosaur, sans-serif;
   font-style: normal;
@@ -53,6 +66,42 @@ body {
 }
 #projects > * .sections {
   flex: 4;
+}
+#projects > * .sections .section {
+  margin-top: 4em;
+}
+#projects > * .sections img {
+  width: 100%;
+}
+
+#section2 .images {
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 50% 50%;
+  grid-row: auto auto;
+  grid-column-gap: 0;
+  grid-row-gap: 2%;
+}
+#section2 .images img {
+  width: 95%;
+}
+
+#section4 .images {
+  width: 100%;
+}
+#section4 .images .scroll {
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+  position: relative;
+}
+#section4 .images .scroll img {
+  height: 800px;
+  width: 2800px;
+  position: absolute;
+  left: 100px;
 }
 
 /*# sourceMappingURL=style.css.map */
