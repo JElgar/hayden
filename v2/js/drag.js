@@ -25,7 +25,6 @@ function dragElement(elmnt) {
     pos3 = e.clientX;
     // set the element's new position:
       var newY = elmnt.offsetLeft - pos1;
-      console.log(2800 - document.getElementById('scroll').offsetWidth);
       if(newY <= 0 && newY >= -(2800 - document.getElementById('section4').offsetWidth)){
         elmnt.style.left = (newY) + "px";
       }
